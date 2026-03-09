@@ -1,0 +1,134 @@
+---
+title: "Assembly layers structuring biodiversity"
+author: "Gabriel Munoz-Acevedo"
+format: revealjs
+editor: visual
+---
+
+## Understanding Earth's living systems
+
+-   To protect nature
+
+-   To protect human well being
+
+-   To respond to environmental challenges
+
+-   To understand how life works
+
+climate → traits → interactions → networks → functioning → people.
+
+## How are Earth’s living systems organized?
+
+-   The ecological assembly framework
+
+-   What we have learned from the ecological assembly framework
+
+-   Common assumptions
+
+    -   equilibrium / stationarity
+
+    -   trait–interaction mapping is stable
+
+    -   interactions are pairwise & context-independent
+
+    -   contemporary gradients approximate selective environments
+
+    -   space substitutes for time
+
+    -   sampling/observation processes don’t bias inference
+
+-   Challenges moving forward
+
+## How climate change reshapes biodiversity?
+
+-   Earth climate dynamics as driver of ecological assembly process
+
+    -   Climate as an ecological filter
+
+    -   Climate modifies species interactions
+
+-   Uneven responses across regions & taxa
+
+-   Historical assembly processes
+
+> Biodiversity reorganization under climate change is predictable when we model ecological assembly as a trait-mediated, interaction-structured process operating across trophic levels and constrained by historical climate dynamics
+
+## Thesis chapters
+
+-   Chapter overview
+
+## Chapter 1: Trait based inference of ecological network assembly
+
+-   Ecological networks are shaped by how species interact and connect
+
+-   Network assembly processes within and between trophic levels
+
+-   Species traits are central to network assembly processes
+
+-   Simulating network assembly
+
+-   Inferring network assembly with null models
+
+## Chapter 2: Distinct functional responses of consumers and their producers to climate drive mutualistic network assembly
+
+-   Environmental filtering shapes species trait diversity unvenly across trophic levels generating FTA
+
+-   Questions:
+
+    -   How does functional asymmetry vary across large-scale environmental gradients?
+
+    -   Does it have an influence in network structure?
+
+-   Network assembly workflow
+
+    -   Data sources
+
+    -   Inferring network assembly
+
+        -   Evaluating models of network assembly
+
+        -   Defining interaction guilds
+
+        -   Predicting interaction guilds
+
+        -   Defining co-concurrence probabilities
+
+    -   Assembling networks
+
+    -   Climatic data
+
+-   Results
+
+    -   How climate change influence FTA
+
+    -   How FTA relates to network structure
+
+-   Interpretation
+
+## Chapter 3: Climate change drove the deep time assembly of biodiversity
+
+-   Why deep time?
+
+    -   The problem with inferring ecological assembly processes with contemporary climatic gradients
+
+-   How does historical climate change dynamics influence the genesis of species pools
+
+-   Climate change across the Neogene
+
+    -   Mean atmospheric temperature
+
+-   Fossil datasets
+
+-   Defining dissimilarity of fossil paleoassemblages
+
+-   Delineating fossil paleobiogeographic regions
+
+-   Linking climate change to taxonomic replacement
+
+## Implication towards predicting the future of biodiversity
+
+## Implication towards biodiversity conservation
+
+## Implication towards climate change adaptation
+
+## Implication towards understanding transformation of ecosystems

@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="slideck_v1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="slideck_v1_files/libs/quarto-html/tabby.min.js"></script>
+<script src="slideck_v1_files/libs/quarto-html/popper.min.js"></script>
+<script src="slideck_v1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="slideck_v1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="slideck_v1_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="slideck_v1_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.39">
+
+  <meta name="author" content="Gabriel Munoz">
+  <title>Macroscale inference of multitrophic community assembly under climate change</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="slideck_v1_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="slideck_v1_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="slideck_v1_files/libs/revealjs/dist/theme/quarto-55225690f492fde138092703e533ecf5.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="slideck_v1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="slideck_v1_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="slideck_v1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="slideck_v1_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Macroscale inference of multitrophic community assembly under climate change</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Gabriel Munoz 
+</div>
+</div>
+</div>
+
+</section>
+<section>
+<section id="why-to-infer-macro-assembly-processes-under-climate-change" class="title-slide slide level1 center">
+<h1>Why to infer macro-assembly processes under climate change?</h1>
+
+</section>
+<section id="to-anticipate-risks-to-biodiversity-ecosystem-functioning-and-human-well-being" class="slide level2">
+<h2>To anticipate risks to biodiversity, ecosystem functioning, and human well-being</h2>
+
+<img data-src="images/clipboard-2410635095.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="climate-change-as-a-driver-of-ecological-assembly-regimes" class="title-slide slide level1 center">
+<h1>Climate change as a driver of ecological assembly regimes</h1>
+
+</section>
+<section id="climate-change-reshapes-the-conditions-under-which-ecological-communities-form-and-persist" class="slide level2">
+<h2>Climate change reshapes the conditions under which ecological communities form and persist</h2>
+
+<img data-src="images/clipboard-2947021219.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="ecological-communities-reflect-filtering-and-colonization-across-climate-gradients" class="slide level2">
+<h2>Ecological communities reflect filtering and colonization across climate gradients</h2>
+
+<img data-src="images/clipboard-3679012915.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="climate-change-modifies-not-just-where-species-can-live-but-which-combinations-of-traits-and-interactions-are-feasible" class="slide level2">
+<h2>Climate change modifies not just where species can live, but which combinations of traits and interactions are feasible</h2>
+
+<img data-src="images/clipboard-1011627477.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="climate-change-restructures-macroevolutionary-and-biogeographic-trajectories" class="slide level2">
+<h2>Climate change restructures macroevolutionary and biogeographic trajectories</h2>
+
+<img data-src="images/clipboard-1157780916.png" class="r-stretch quarto-figure-center"><p class="caption">© Hans Sell &amp; Christopher W. Carlton</p></section>
+<section id="challenges-to-advance-the-inference-of-community-assembly-processes-at-macroscales" class="slide level2">
+<h2>Challenges to advance the inference of community assembly processes at macroscales</h2>
+<div class="callout callout-none no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>1) Bridging research developed in conceptual silos</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Single trophic levels</p></li>
+<li><p>Correlations with species counts (i.e.&nbsp;alpha diversity)</p></li>
+<li><p>Local studies</p>
+<ul>
+<li><p>Space</p></li>
+<li><p>Time</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-none no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>2) Bridging theory, data, and scale</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Research remains in the theoretical domain, simulations of reality are simplifications</p></li>
+<li><p>Experimental researchers have it hard to scale and control complexity</p></li>
+<li><p>Synthetic datasets (i.e.&nbsp;aggregated observations) represent shared effort &amp; knowledge however,</p>
+<ul>
+<li><p>Computational methods are available but not integrated (e.g.&nbsp;OS packages)</p></li>
+<li><p>Species occurrences, traits, and interaction datasets are now digitally available, yet they are not integrated with data on climate, particularly at planetary scales.</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-none no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>3) Going beyond contemporary climate gradients</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Life in Earth goes beyond the Holocene</p></li>
+<li><p>Climate gradients are dynamic</p></li>
+<li><p>Climate effects emphasize spatial gradients of change rather than temporal trends, even less in deep time trends.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section></section>
+<section id="chapter-overview" class="title-slide slide level1 center">
+<h1>Chapter Overview</h1>
+<ul>
+<li><p>Chapter 1: Inferring network assembly mechanisms</p></li>
+<li><p>Chapter 2: Climate-driven functional asymmetry and network structure</p></li>
+<li><p>Chapter 3: Deep-time climate dynamics and biodiversity assembly</p></li>
+</ul>
+</section>
+
+<section>
+<section id="chapter-1-trait-based-inference-of-ecological-network-assembly" class="title-slide slide level1 center">
+<h1>Chapter 1: Trait-based inference of ecological network assembly</h1>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><p>Does assembly processes generate emergent network structure?</p></li>
+<li><p>Simulating network assembly</p></li>
+<li><p>Inferring assembly processes using trait-based null models</p></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/clipboard-953775975.png"></p>
+</div></div>
+</section>
+<section id="chapter-1-simulating-network-assembly" class="slide level2">
+<h2>Chapter 1: Simulating network assembly</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Individual-based, spatially implicit assembly models
+<ul>
+<li>Reference-pool species vary in abundance and trait values<br>
+</li>
+<li>Immigration is trait-filtered<br>
+</li>
+<li>Established lineages diversify via neutral stochastic drift</li>
+</ul></li>
+<li>Community assembly
+<ul>
+<li><code>SEF</code>: environmental filtering<br>
+</li>
+<li><code>ND</code>: neutral dynamics</li>
+</ul></li>
+<li>Interaction assembly
+<ul>
+<li><code>MM</code>: morphological matching<br>
+</li>
+<li><code>FL</code>: forbidden links<br>
+</li>
+<li><code>NL</code>: stochastic interactions (abundance)</li>
+</ul></li>
+<li>Calculate <strong>NODF</strong> and <strong>Q</strong></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/clipboard-2001062733.png" style="width:100.0%"></p>
+</div></div>
+</section>
+<section id="chapter-1-simulating-network-assembly-1" class="slide level2">
+<h2>Chapter 1: Simulating network assembly</h2>
+
+<img data-src="images/clipboard-2925595037.png" class="quarto-figure quarto-figure-center r-stretch" width="700"></section>
+<section id="chapter-1-inferring-network-assembly-case-study" class="slide level2">
+<h2>Chapter 1: Inferring network assembly | Case study</h2>
+<ul>
+<li><p>Elevational gradient in the Andes of Ecuador</p>
+<ul>
+<li><p>100 m of elevation change ~ 100% plant community turnover</p></li>
+<li><p>Well preserved Andean slopes</p></li>
+<li><p>large native forest patches</p></li>
+<li><p>indigenous plant + animal communities</p></li>
+</ul></li>
+</ul>
+
+<img data-src="images/clipboard-2575140852.png" class="r-stretch"></section>
+<section id="chapter-1-inferring-network-assembly" class="slide level2">
+<h2>Chapter 1: Inferring network assembly</h2>
+<ul>
+<li><p>Species level frugivore bird - plant interaction networks in replicated sites across the gradient</p></li>
+<li><p>Field observations, expert species id.</p></li>
+<li><p>Which assembly process can we infer from the variation in network metrics along the climatic gradient?</p></li>
+</ul>
+
+<img data-src="images/clipboard-578837931.png" class="r-stretch"></section>
+<section id="chapter-1-inferring-network-assembly-process-based-species-pool-delineation" class="slide level2">
+<h2>Chapter 1: Inferring network assembly | Process-based species pool delineation</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><p>Climate resistance layer from WorldClim (Slope + Temp + Prec + Elev)</p></li>
+<li><p>Least cost path distances</p></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/clipboard-570966342.png" class="quarto-figure quarto-figure-center" width="400"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="chapter-1-inferring-network-assembly-quantify-trait-matching" class="slide level2">
+<h2>Chapter 1: Inferring network assembly | Quantify trait matching</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><p>Correspondence analyses on interactions</p>
+<ul>
+<li><p>PCA on plant/animal trait matrices</p></li>
+<li><p>RLQ ordination to link plant traits - interactions - animal traits</p></li>
+<li><p>significance with fourthcorner analyses.</p></li>
+</ul></li>
+<li><p>RLQ axes as trait axis for environmental filtering and interaction assembly analyses</p></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/clipboard-3978030866.png" class="quarto-figure quarto-figure-center" width="1000"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="chapter-1-inferring-network-assembly-relative-influence-of-assembly-processes" class="slide level2">
+<h2>Chapter 1: Inferring network assembly | Relative influence of assembly processes</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><p>Generate null networks per site randomizing:</p>
+<ul>
+<li><p>Interactions only (plants + animals fixed)</p></li>
+<li><p>Consumers + interactions</p></li>
+<li><p>Resources + interactions</p></li>
+<li><p>Consumers + resources + interactions</p></li>
+</ul></li>
+<li><p>Partition effects</p>
+<ul>
+<li><p>Interaction effect</p></li>
+<li><p>Resource effect</p></li>
+<li><p>Consumer effect</p></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/clipboard-1495669056.png"></p>
+</div></div>
+</section></section>
+<section>
+<section id="chapter-2-distinct-functional-responses-of-consumers-and-their-producers-to-climate-drive-mutualistic-network-assembly" class="title-slide slide level1 center">
+<h1>Chapter 2: Distinct functional responses of consumers and their producers to climate drive mutualistic network assembly</h1>
+
+</section>
+<section id="chapter-2-conceptual-framework" class="slide level2">
+<h2>Chapter 2: Conceptual framework</h2>
+<ul>
+<li><p>Latent trait exist along the gradient</p></li>
+<li><p>How does asymmetry in FR vary across large-scale climatic gradients?</p></li>
+<li><p>Does functional asymmetry constrain network structure?</p></li>
+</ul>
+
+<img data-src="images/clipboard-2849440650.png" class="r-stretch"></section>
+<section id="chapter-2-downscaling-aggregated-meta-networks" class="slide level2">
+<h2>Chapter 2: Downscaling aggregated meta-networks</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Digitally available data on:
+<ul>
+<li>Palms</li>
+<li>Mammal frugivores</li>
+</ul></li>
+<li>Museum records</li>
+<li>Scientific literature</li>
+<li>Range maps</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/clipboard-1923800125.png" style="width:100.0%"></p>
+</div></div>
+</section>
+<section id="chapter-2-network-parametrization" class="slide level2">
+<h2>Chapter 2: Network parametrization</h2>
+<ul>
+<li><p>Which model best infer interaction probability from binary interaction data?</p>
+<ul>
+<li><p>SBM: Stochastic block model</p></li>
+<li><p>MCM: Matching centrality model</p></li>
+<li><p>CM: Connectance model</p></li>
+<li><p>TMM: Trait matching model</p></li>
+</ul></li>
+</ul>
+
+<img data-src="images/clipboard-24620577.png" class="r-stretch"></section>
+<section id="chapter-2-trait-linkage" class="slide level2">
+<h2>Chapter 2: Trait-linkage</h2>
+<ul>
+<li>Delineating &lt;&lt;interaction guilds&gt;&gt; with trait data</li>
+<li>Useful to predict interactions that are not observed</li>
+</ul>
+
+<img data-src="images/clipboard-1951906964.png" class="r-stretch"></section>
+<section id="chapter-2-effects-of-climate-change-in-functional-richness-vary-between-palms-and-mammals-and-generate-functional-trophic-asymmetry" class="slide level2">
+<h2>Chapter 2: Effects of climate change in functional richness vary between palms and mammals, and generate functional trophic asymmetry</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Filtering strength varies across interaction guilds<br>
+</li>
+<li>Asymmetry dynamics vary across interaction guilds</li>
+<li>Interaction guild-specific responses of asymmetry to climate gradient</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="images/clipboard-3514177464.png" style="width:100.0%"></p>
+</div></div>
+</section>
+<section id="chapter-2-effects-of-climate-in-fta-correlate-with-changes-in-network-structure" class="slide level2">
+<h2>Chapter 2: Effects of climate in FTA correlate with changes in network structure</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Positive relationship with H2’ - specialization</li>
+<li>Low specialization overall</li>
+</ul>
+<p><img data-src="images/clipboard-98239982.png"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Stronger positive relationship of FTA with Spectral radius ~ Nestedness</li>
+</ul>
+<p><img data-src="images/clipboard-1692998543.png"></p>
+</div></div>
+</section></section>
+<section>
+<section id="chapter-3-climate-change-and-the-deep-time-assembly-of-biodiversity" class="title-slide slide level1 center">
+<h1>Chapter 3: Climate change and the deep-time assembly of biodiversity</h1>
+
+</section>
+<section id="why-biodiversity-and-climate-change-in-deep-time" class="slide level2">
+<h2>Why biodiversity and climate change in deep time</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li>Assembly inference is often limited to contemporary climate gradients
+<ul>
+<li>Climate history structures species pools</li>
+</ul></li>
+<li>Historical climate context is underrepresented in contemporary assembly processes
+<ul>
+<li>Variation in rates of change<br>
+</li>
+<li>Variation in climatic instability</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:55%;">
+<p><img data-src="images/clipboard-3299944094.png" style="width:100.0%"></p>
+</div></div>
+</section>
+<section id="chapter-3-conceptual-framework" class="slide level2">
+<h2>Chapter 3: Conceptual framework</h2>
+<ul>
+<li>How do rates and instability of climate change influence taxonomic turnover across deep time?</li>
+<li>Are responses to climate change consistent across continents and trophic guilds?</li>
+</ul>
+
+<img data-src="images/clipboard-3602501179.png" class="r-stretch"></section>
+<section id="chapter-3-deep-time-climate-dynamics-across-the-neogene" class="slide level2">
+<h2>Chapter 3: Deep-time climate dynamics across the Neogene</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li>Digitally available paleoatmospheric temperature reconstructions<br>
+(Hagen et al., 2019)
+<ul>
+<li>Fossil plant ranges</li>
+<li>Köppen zones</li>
+<li>Orogenesis models</li>
+</ul></li>
+<li>GAM-based feature engineering to derive historical change metrics</li>
+<li>Raster layer time series
+<ul>
+<li>23Ma - 2Ma</li>
+<li>1Ma resolution</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:55%;">
+<p><img data-src="images/clipboard-4234749061.png" style="width:80.0%"></p>
+</div></div>
+</section>
+<section id="chapter-3-fossil-genus-turnover-across-deep-time" class="slide level2">
+<h2>Chapter 3: Fossil genus turnover across deep time</h2>
+<ul>
+<li><p>Large mammal fossil spatiotemporal data from NOW database</p>
+<ul>
+<li><p>North America</p></li>
+<li><p>Europe</p></li>
+</ul></li>
+<li><p>100 KM fossil assemblages - 1 Ma</p></li>
+<li><p><span class="math inline">\(\beta_{sim}\)</span> : Simpson component of species dissimilarity (Turnover)</p></li>
+</ul>
+</section>
+<section id="chapter-3-modelling-the-effects-of-climate-in-fossil-turnover" class="slide level2">
+<h2>Chapter 3: Modelling the effects of climate in fossil turnover</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Generalized dissimilarity modelling (GDM)</p></li>
+<li><p>Richness of fossil assemblages used as model weights</p></li>
+<li><p>Explained deviance against a null model (permuting predictors but retaining spatial structure)</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/clipboard-2705033692.png" style="width:100.0%"></p>
+</div></div>
+<p><span class="math inline">\(\log(\beta_{sim}) =
+    \beta_0 +
+    \beta_1 \Delta \text{TempChange} +
+    \beta_2 \Delta \text{TempInst} +
+    \beta_3 \Delta \text{MeanTemp} +
+    \beta_4 \Delta \text{Space} +
+    \beta_5 \Delta \text{Time} +
+    \epsilon\)</span></p>
+</section>
+<section id="chapter-3-spatial-and-temporal-drivers-of-mammal-assembly-across-the-neogene" class="slide level2">
+<h2>Chapter 3: Spatial and temporal drivers of mammal assembly across the Neogene</h2>
+
+<img data-src="images/clipboard-2765521706.png" class="r-stretch"></section>
+<section id="chapter-3-climate-drivers-of-mammal-assembly-across-the-neogene" class="slide level2">
+<h2>Chapter 3: Climate drivers of mammal assembly across the Neogene</h2>
+<ul>
+<li><p>Magnitude &amp; direction of climate change the strongest predictor of fossil change</p></li>
+<li><p>Global cooling slows down in North America coincides with increased fossil herbivore turnover</p></li>
+<li><p>Increased turnover of carnivores in more tropical areas of North America and with climate warming in Europe</p></li>
+</ul>
+
+<img data-src="images/clipboard-204305400.png" class="r-stretch"></section></section>
+<section>
+<section id="synthesis-and-implications" class="title-slide slide level1 center">
+<h1>Synthesis and Implications</h1>
+
+</section>
+<section id="synthesis" class="slide level2">
+<h2>Synthesis:</h2>
+<ul>
+<li><p>Chapter 1: Networks are structured via trait-based environmental filtering with cascading bottom-up and top-down effects on the assembly of species interactions.</p></li>
+<li><p>Chapter 2: Large-scale climate gradients filter consumers and resources with distinct strengths, generating functional asymmetry and modifying network structure</p></li>
+<li><p>Chapter 3: Stronger turnover rates found in warming events within a long-term cooling trend, but turnover rates differs between trophic guild.</p></li>
+</ul>
+</section>
+<section id="implications" class="slide level2">
+<h2>Implications</h2>
+<ul>
+<li><p>Network architecture is not locally driven, rather is climate and historically conditioned</p></li>
+<li><p>Community assembly respond to directional climatic transitions</p>
+<ul>
+<li>Hierarchical processes operating in tandem</li>
+</ul></li>
+<li><p>Shift in assembly concept</p>
+<ul>
+<li><p>Static climatic envelopes —&gt; Transient dynamics</p></li>
+<li><p>Niche-neutral dicotomy –&gt; Relative influence of assembly processes</p></li>
+</ul></li>
+<li><p>Climate change effects are not uniform across trophic levels</p>
+<ul>
+<li><p>Effects can cascade to other trophic levels, based on interaction assembly rules</p></li>
+<li><p>Computational tools to measure this effects</p></li>
+</ul></li>
+<li><p>Deep time evidence of: Rapid directional shifts destabilize assembly more than background drift</p>
+<ul>
+<li>Current anthropogenic warming may trigger disproportionately strong reorganization.</li>
+</ul></li>
+</ul>
+</section>
+<section id="whats-next" class="slide level2">
+<h2>What’s next?</h2>
+<p><strong>Develop a predictive framework for how ecosystems reorganize under global change</strong></p>
+<ul>
+<li><p>Test assembly processes in networks in disturbed and novel ecosystems</p>
+<ul>
+<li><p>Rewilding and restoration sites</p></li>
+<li><p>Urban and agroecosystems</p></li>
+<li><p>Invasion fronts</p></li>
+</ul></li>
+<li><p><strong>Develop Indicators for Planetary scale Biodiversity Monitoring</strong></p></li>
+</ul>
+<pre><code>-   Use Null Models / FTA and FTA–H2′ as structural indicators of
+    change
+
+-   Generalize pipelines for monitoring programs (e.g.
+    biosurveillance)&nbsp;
+
+-   Make tools available to the public (geoBON)</code></pre>
+</section></section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank you!</h1>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/lessardlablogo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="slideck_v1_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="slideck_v1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="slideck_v1_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="slideck_v1_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="slideck_v1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="slideck_v1_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="slideck_v1_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="slideck_v1_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="slideck_v1_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="slideck_v1_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

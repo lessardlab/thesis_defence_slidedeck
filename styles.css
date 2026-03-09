@@ -1,0 +1,69 @@
+/* =========================
+   GLOBAL TYPOGRAPHY
+========================= */
+
+.reveal {
+  font-size: 28px;   /* Default is ~32px → this is noticeably smaller */
+  line-height: 1.3;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.reveal h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.reveal h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.reveal h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+/* =========================
+   BODY TEXT
+========================= */
+
+.reveal p,
+.reveal li {
+  font-size: 0.95em;
+}
+
+/* Tighter bullet spacing */
+.reveal ul,
+.reveal ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* =========================
+   FIGURES
+========================= */
+
+.reveal figure {
+  margin: 0.5em auto;
+}
+
+.reveal figcaption {
+  font-size: 0.7em;
+  color: #555;
+}
+
+/* =========================
+   TITLE SLIDE
+========================= */
+
+.reveal .title {
+  font-size: 2em;
+}
+
+.reveal .author {
+  font-size: 1em;
+  opacity: 0.85;
+}
