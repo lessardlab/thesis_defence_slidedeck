@@ -1,12 +1,19 @@
 ---
-title: "Multilevel Drivers of Multitrophic Assembly in a Changing Climate"
+title: "Planetary drivers of biodiversity change"
+subtitle: "Multitrophic community assembly under changing climates"
 author: "Gabriel Munoz"
 date: today
 format: 
   revealjs: 
     theme: simple
+    margin: 0.1
+    width: 1400    # optional: increase slide width
+    height: 650    # optional: increase slide height
+    footer: "Concordia University - Biology Department"
     slide-number: true
-    smaller: true
+    smaller: false
+    minScale: 0.5     # Allow smaller scaling
+    maxScale: 2.0     # Allow larger scaling
     logo: images/lessardlablogo.png
     css: styles.css
     transition: fade
@@ -17,140 +24,478 @@ editor:
     wrap: 72
 ---
 
-# Understanding global biodiversity change
+# Earth as a Living System {background-image="https://cdn.mos.cms.futurecdn.net/rjdGi9hmMPhbd6Z7f3rcdT.png" background-color="black" color="white"}
 
-Biodiversity is a fragile, emerging state on a rock drifting through
-space
+How is life organized?
 
-## What shapes biodiversity 
+## Life in Earth Is Unevenly Distributed and is Constantly Changing
 
-Life in Earth is constantly changing due to:
+:::::: columns
+::: {.column width="40%"}
+-   **Biodiversity:** The diversity and distribution of life across
+    biological levels (*genes, organsims, populations, ...*)
 
--   Environmental change
+-   **Biological communities:** Sets of species co-occurring in space
+    and time and linked by ecological interactions
 
--   Habitat loss
+-   **Biodiversity change:** Emergent organization of communities across
+    ecosystems resulting from ecological and evolutionary processes
 
--   Biological invasions
+    -   Expressed as patterns in space&time
 
--   Drift & Stochasticity
+    -   Predictable processes
+:::
 
-## Biodiversity is unevenly distributed
+:::: {.column width="60%"}
+::: r-stack
+![](images/world_map_view.jpeg){.r-stretch .fragment height="500"}
 
-Despite constant change, biodiversity shows structure:
+![](images/org_levels.jpg){.r-stretch .fragment height="500"}
 
--   Global richness gradients
+![](images/spatial_change.png){.r-stretch .fragment height="500"}
 
--   Spatial structure
+![](images/succession.png){.r-stretch .fragment height="500"
+width="900"}
+:::
+::::
+::::::
 
--   Temporal succession
+## Understanding Global Biodiversity Change
 
-## From biodiversity patterns to ecological processes
+:::::: columns
+::: {.column width="50%"}
+Multidimensional + Multiscale Expressions
 
--   Two major frameworks
+-   Changes in species richness *(local \| alpha diversity)*
 
-    -   Island biogeography **–\>** *How many species occur?*
+-   Changes in species composition *(turnover \| beta diversity)*
 
-    -   Community assembly **–\>** *Which species occur and why?*
+-   Changes in community structure *(foodweb \| network topology)*
 
-## Community assembly theory as a framework to understand biodiversity change
+    -   Across trophic levels
 
-> What are the mechanisms shaping species composition?
+    -   Across interaction types
 
--   Community assembly provides:
+> Patterns != explanation
+:::
 
-    -   Mathematical framework for representing the structure of
-        ecosystems
+:::: {.column width="50%"}
+::: r-stack
+![](images/lat_bio_gradient.jpg){.r-stretch .fragment height="550"
+width="700"}
 
-    -   Mechanistic explanations of species coexistence and turnover
+![](images/bio-regions.png){.r-stretch .fragment height="550"
+width="700"}
 
-    -   Theory that can be supported with experimental and observational
-        data.
+![](images/networks_example.jpg){.r-stretch .fragment height="550"
+width="300"}
 
-## Core processes in community assembly
+![](images/inter_networks.webp){.r-stretch .fragment height="550"
+width="300"}
+:::
+::::
+::::::
 
-> Community composition = Assembly processes in the regional species
-> pool
+## Community assembly theory as a process-based framework to understand biodiversity change
 
--   Four 'fundamental' forces shaping communities
+:::::: columns
+::: {.column width="50%"}
+*Which* species occur, *where*, *when*, and *why*?
 
-    -   Speciation\\Extinction
+------------------------------------------------------------------------
 
-        -   Generates new species, terminates species
+Mechanisms of community assembly *(Vellend 2010)*:
 
-    -   Selection
+-   Speciation
 
-        -   Environmental filtering
+-   *Selection*
 
-        -   Biotic interactions
+    -   *Environmental filtering*
 
-    -   Dispersal
+    -   *Biotic interactions*
 
-        -   Species movement
+-   Dispersal
 
-    -   Drift
+-   Drift
+:::
 
-        -   Stochastic demographic changes
+:::: {.column width="50%"}
+::: r-stack
+![](images/clipboard-4198517604.png){.r-stretch height="550"
+width="650"}
 
-        -   Neutral dynamics
+![](images/clipboard-692859800.png){.r-stretch .fragment height="550"
+width="650"}
 
-## Speciation and extinction
+![](images/clipboard-3787437788.png){.r-stretch .fragment height="550"
+width="650"}
+:::
+::::
+::::::
 
-![](images/clipboard-3046529447.png)
+## Global climate change as a driver of community assembly mechanisms
 
-## Selection (Niche-based processes):
+:::::: columns
+::: {.column width="40%"}
+Global climate changes shapes:
 
--   Environmental filters
+-   Spatial distribution of biomes
 
-    -   Fundamental niches
+-   The evolution of species pools
 
--   Biotic interactions
+-   Temporal turnover rates
+:::
 
-    -   Realized niche
+:::: {.column width="60%"}
+::: r-stack
+![](images/climate_zones.webp){.r-stretch .fragment height="500" width="700"}
 
-        -   Competitive exclusion
+![](images/whittaker_plot.jpg){.r-stretch .fragment height="500" width="700" style="\"background:white"}
 
-        -   Trait-matching
+![](images/evolution_radiation.png){.r-stretch .fragment height="500" width="700" style="\"background:white"}
 
-            ![](images/clipboard-1952640270.png)
 
-## Dispersal and Drift
+![](images/trate_chante.png){.r-stretch .fragment height="500" width="700"}
 
-Dispersal: Movement of species across space
 
--   Range expansions
 
--   Colonization
+:::
+::::
+::::::
 
--   Spatial connectivity
 
-Drift: Random fluctuation in populations
+## Inferring Assembly Processes Under Climate Change: Key Conceptual Challenges
 
--   Demographic stochasticity
 
--   Random death and immigration
+- **Community assembly remains an evolving analytical framework**
 
--   Environmental disturbances
 
--   Mutations
+  - Longitudinal processes are inferred from largely snapshot data
+  
+  - Primarily developed under contemporary environmental conditions
+  
+  - Historical dynamics remain poorly resolved
+    
+  
+- **Assembly processes are typically inferred within single trophic levels**
+  
+  - Implicit assumptions of species independence
 
-![](images/clipboard-3903088196.png)
+  - Limited integration of interactions within selection (environmental filtering × biotic interactions: $EF \times I$)
 
-## Mechanisms underpinning patterns in species turnover
 
--   Turnover: Degree or taxonomic replacement
+- **The role of assembly in shaping community structure remains unresolved**
 
--   Classic perspective:
+  - Is network structure an emergent property of community assembly? 
+  
+  - Do assembly processes operate bottom-up, top-down, or across trophic levels?
 
-    -   Clementian view: Species ranges overlap based on same
-        fundamental niches - communities as superorganisms - modular
-        structure
 
-    -   Gleasonian view: Fundamental niches are not related to one
-        another
+  
+## Inferring Assembly Processes Under Climate Change: Key Analytical Challenges
+  
+    
+- **Large-scale assembly models are data- and computation-intensive** 
 
-![](images/clipboard-1720611715.png)
+  - Many algorithms are not readily scalable 
+  
+  - Methods are required to manage high dimensionality
+  
+  - Simulation-based approaches are computationally demanding
 
-![](images/clipboard-532409280.png)
+- **Global biodiversity data remain sparse and uneven** 
+
+  - Uneven coverage across trophic levels
+  
+  - Imbalanced representation across data types (e.g., occurrences vs. interactions)
+  
+  - Data synthesis efforts are advancing but remain incomplete
+
+
+## From challenges to opportunity in ecological assembly 
+
+
+
+![](images/thesis_concept.png){.r-stretch height="500" width="700"}
+
+
+# Thesis overview
+
+-   Chapter 1: How deeptime climatic dynamics shapes species pools?
+
+-   Chapter 2: How large scale climatic filtering operates across trophic levels?
+
+-   Chapter 3: How to infer assembly processes across changing landscapes?
+
+
+
+
+# Chapter 1 
+Climate change drove the deep-time assembly of biological diversity
+
+
+# {background-image="images/time_back.gif"}
+
+
+## The planet has cooled over time from a warmer past
+
+
+
+:::::: columns
+::: {.column width="40%"}
+Earth temperature shifts:
+
+-   A history of warm conditions
+
+-   Cooling phase during the Neogene (23-2 Ma)
+
+-   Modern mammal faunas emerged during the Neogene
+
+:::
+
+:::: {.column width="60%"}
+::: r-stack
+![](images/surface_temperature_world.png){.r-stretch .fragment  height="500" width="700"}
+
+
+
+
+
+
+![](images/temperature_past.webp){.r-stretch .fragment height="500" width="700"}
+:::
+
+::::
+::::::
+
+# The Neogene (23 - 2 Ma) {background-image="images/neogene_fauna.jpg" background-color="black" color="white"}
+Earth was cooling but still hotter than today!
+
+
+
+
+## Changes in surface temperature drive planetary ecosystem and biome distribution
+
+
+
+:::::: columns
+::: {.column width="40%"}
+
+
+-   Surface temperature modulates the convergence latitude of  the subtropical jetstream
+
+-   Tropical <<forest>> ecosystems typically expand during warming phases
+
+-   Grasslands typically expand during cooling phase
+
+:::
+
+:::: {.column width="60%"}
+::: r-stack
+
+![](images/expanding_tropics.png){.r-stretch .fragment height="500" width="700"}
+:::
+::::
+:::::
+
+
+## How did climate change impacted the distribution of Neogene fauna? 
+
+
+::::: columns
+::: {.column width="45%"}
+
+
+Integrative statistical modelling (23 - 2 Ma)
+
+  - Earth surface temperature reconstructions
+  
+  - Large-mammal fossil records (NOW database)
+  
+:::
+
+::: {.column width="55%"}
+
+
+![](images/clipboard-4234749061.png){width="80%"}
+
+![](images/now-database.png)
+
+
+:::
+:::::
+
+
+
+## Conceptual framework
+
+
+::::: columns
+::: {.column width="45%"}
+
+Earth surphace temperature change:   
+
+  - RoT: Magnitude & direction 
+  
+  - Instabilty
+  
+> Do climate RoT and instability drive turnover?
+
+> Are responses consistent across continents and guilds?
+  
+  
+:::
+  
+::: {.column width="55%"}
+:::r-stack
+![](images/clim_geol_time.png){.r-stretch .fragment height="500" width="600"}
+
+
+
+![](images/hypothe-clim.jpg){.r-stretch .fragment height="500" width="700" background-color="white"}
+:::
+:::
+:::::
+
+## Methods 
+
+::::: columns
+::: {.column width="50%"}
+
+- Large mammal fossil data fpr Northamerica & Europe 
+
+  - aggregated to 1Ma & 100 $Km^2$ assemblages 
+  
+  - genus level records
+  
+  - Estimated richness 
+
+  - $\beta_{sim}$ : Simpson component of species dissimilarity
+      (Turnover)
+
+## Modelling the effects of climate in fossil turnover
+
+::::: columns
+::: {.column width="50%"}
+-   Generalized dissimilarity modelling (GDM)
+
+-   Richness of fossil assemblages used as model weights
+
+-   Explained deviance against a null model (permuting predictors but
+    retaining spatial structure)
+:::
+
+::: {.column width="50%"}
+![](images/clipboard-2705033692.png){width="100%"}
+:::
+:::::
+
+$\log(\beta_{sim}) =     \beta_0 +     \beta_1 \Delta \text{TempChange} +     \beta_2 \Delta \text{TempInst} +     \beta_3 \Delta \text{MeanTemp} +     \beta_4 \Delta \text{Space} +     \beta_5 \Delta \text{Time} +     \epsilon$
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Chapter 2
+Distinct functional responses of consumers and their producers to climate drive mutualistic network assembly
+
+
+# Chapter 3
+Trait-based inference of ecological network assembly
+
+
+
+## Species traits reflect adaptations to climate
+
+:::::: columns
+::: {.column width="30%"}
+-   Physiological adaptations
+
+-   
+:::
+
+:::: {.column width="60%"}
+::: r-stack
+:::
+::::
+::::::
+
+## Species traits reflect biotic interactions
+
+:::::: columns
+::: {.column width="30%"}
+-   Interactions are constrained by traits
+
+    -   Body size
+
+    -   Morphology
+
+    -   Diet
+
+-   Trait matching
+
+    -   Who interacts with whom
+:::
+
+:::: {.column width="60%"}
+::: r-stack
+:::
+::::
+::::::
+
+## The structure of ecological networks
+
+:::::: columns
+::: {.column width="30%"}
+-   Interactions modify species population growth rates
+
+    -   Stability and long-term persistence
+
+    -   Non-random network structurese
+:::
+
+:::: {.column width="60%"}
+::: r-stack
+:::
+::::
+::::::
+
+
+
+
+## Deep-time climate dynamics across the Neogene
+
+
+## Spatial and temporal drivers of mammal assembly across the Neogene
+
+![](images/clipboard-2765521706.png)
+
+## Climate drivers of mammal assembly across the Neogene
+
+-   Magnitude & direction of climate change the strongest predictor of
+    fossil change
+
+-   Global cooling slows down in North America coincides with increased
+    fossil herbivore turnover
+
+-   Increased turnover of carnivores in more tropical areas of North
+    America and with climate warming in Europe
+
+![](images/clipboard-204305400.png)
+
+# Chapter 2: Distinct functional responses of consumers and their producers to climate drive mutualistic network assembly
 
 ## Biotic interactions shape community structure
 
@@ -164,39 +509,20 @@ Drift: Random fluctuation in populations
     -   Mutualisms
     -   Parasitims
     -   Etc.
--   Trophic cascades
-    -   Top-down
-        -   Mesopredator release
-    -   Bottom-up
-        -   Resource availability
 
-![](images/clipboard-1052090913.png)
+## Functional traits bridge environmental gradients and species interactions
 
-![](images/clipboard-1742552268.png)
+## Chapter 2: Conceptual framework
 
-## Challenges in understanding global biodiversity change
+-   Latent trait exist along the gradient
 
-Understanding biodiversity dynamics is difficult because:
+-   How does asymmetry in FR vary across large-scale climatic gradients?
 
--   There is no single analytic solution
+-   Does functional asymmetry constrain network structure?
 
--   Models fitted to observed data or simulations
+![](images/clipboard-2849440650.png)
 
--   Data represents snapshopts of multidimensional processes
-
-    -   Time by space substitution
-
-    -   Multitrophic perspective
-
-Additional challenges include:
-
--   Data hungry models
-
--   Research silos
-
--   Un-even data collection efforts
-
-## Data integration challenge 
+## Data integration challenge
 
 -   Ecological data are scattered across:
 
@@ -213,50 +539,95 @@ Additional challenges include:
 
     -   Unified analytical frameworks
 
-## Abiotic environment as a driver of large scale changes
+    -   Climate change modifies not just where species can live, but
+        which combinations of traits and interactions are feasible
 
-![](images/clipboard-3060951077.png)
-
--   Climate change reshapes the conditions under which ecological
-    communities form and persist
-
--   Climate change modifies not just where species can live, but which
-    combinations of traits and interactions are feasible
-
-## ![](images/clipboard-2947021219.png)
-
-## Functional traits bridge environmental gradients and species interactions
-
-## Chapter 1: Climate change as a driver of deep-time assembly
-
--   Climate change is not weather and one can not experience climate
-    change in a lifetime
-
--   Todays weather is not a picture of todays climate
-
--   Ecological communities reflect filtering and colonization across
-    climate gradients
-
--   Space for time substitution
-
--   Time-series covering only small geographic ranges
-
-## ![](images/clipboard-867483624.png)
-
-![](images/clipboard-1979917223.png)
-
-# Chapter Overview
-
--   Chapter 1: Inferring network assembly mechanisms
-
--   Chapter 2: Climate-driven functional asymmetry and network structure
-
--   Chapter 3: Deep-time climate dynamics and biodiversity assembly
-
-# Chapter 1: Trait-based inference of ecological network assembly
+## Chapter 2: Downscaling aggregated meta-networks
 
 ::::: columns
 ::: {.column width="40%"}
+-   Digitally available data on:
+    -   Palms
+    -   Mammal frugivores
+-   Museum records
+-   Scientific literature
+-   Range maps
+:::
+
+::: {.column width="60%"}
+![](images/clipboard-1923800125.png){width="100%"}
+:::
+:::::
+
+## Chapter 2: Network parametrization
+
+-   Which model best infer interaction probability from binary
+    interaction data?
+
+    -   SBM: Stochastic block model
+
+    -   MCM: Matching centrality model
+
+    -   CM: Connectance model
+
+    -   TMM: Trait matching model
+
+![](images/clipboard-24620577.png)
+
+## Chapter 2: Trait-linkage
+
+-   Delineating \<\<interaction guilds\>\> with trait data
+-   Useful to predict interactions that are not observed
+
+![](images/clipboard-1951906964.png)
+
+## Chapter 2: Effects of climate change in functional richness vary between palms and mammals, and generate functional trophic asymmetry
+
+::::: columns
+::: {.column width="40%"}
+-   Filtering strength varies across interaction guilds\
+-   Asymmetry dynamics vary across interaction guilds
+-   Interaction guild-specific responses of asymmetry to climate
+    gradient
+:::
+
+::: {.column width="60%"}
+![](images/clipboard-3514177464.png){width="100%"}
+:::
+:::::
+
+## Chapter 2: Effects of climate in FTA correlate with changes in network structure
+
+::::: columns
+::: {.column width="50%"}
+-   Positive relationship with H2' - specialization
+-   Low specialization overall
+
+![](images/clipboard-98239982.png)
+:::
+
+::: {.column width="50%"}
+-   Stronger positive relationship of FTA with Spectral radius \~
+    Nestedness
+
+![](images/clipboard-1692998543.png)
+:::
+:::::
+
+# Chapter 1: Trait-based inference of ecological network assembly
+
+## Trophic cascades can structure communities
+
+```         
+-   Top-down     -   Mesopredator release -   Bottom-up     -   Resource availability
+```
+
+![](images/clipboard-1052090913.png)
+
+::::: columns
+::: {.column width="40%"}
+-   
+
 -   Does assembly processes generate emergent network structure?
 
 -   Simulating network assembly
@@ -274,15 +645,15 @@ Additional challenges include:
 ::::: columns
 ::: {.column width="50%"}
 -   Individual-based, spatially implicit assembly models
-    -   Reference-pool species vary in abundance and trait values\
-    -   Immigration is trait-filtered\
+    -   Reference-pool species vary in abundance and trait values
+    -   Immigration is trait-filtered
     -   Established lineages diversify via neutral stochastic drift
 -   Community assembly
-    -   `SEF`: environmental filtering\
+    -   `SEF`: environmental filtering
     -   `ND`: neutral dynamics
 -   Interaction assembly
-    -   `MM`: morphological matching\
-    -   `FL`: forbidden links\
+    -   `MM`: morphological matching
+    -   `FL`: forbidden links
     -   `NL`: stochastic interactions (abundance)
 -   Calculate **NODF** and **Q**
 :::
@@ -386,200 +757,7 @@ Additional challenges include:
 :::
 :::::
 
-# Chapter 2: Distinct functional responses of consumers and their producers to climate drive mutualistic network assembly
-
-## Chapter 2: Conceptual framework
-
--   Latent trait exist along the gradient
-
--   How does asymmetry in FR vary across large-scale climatic gradients?
-
--   Does functional asymmetry constrain network structure?
-
-![](images/clipboard-2849440650.png)
-
-## Chapter 2: Downscaling aggregated meta-networks
-
-::::: columns
-::: {.column width="40%"}
--   Digitally available data on:
-    -   Palms
-    -   Mammal frugivores
--   Museum records
--   Scientific literature
--   Range maps
-:::
-
-::: {.column width="60%"}
-![](images/clipboard-1923800125.png){width="100%"}
-:::
-:::::
-
-## Chapter 2: Network parametrization
-
--   Which model best infer interaction probability from binary
-    interaction data?
-
-    -   SBM: Stochastic block model
-
-    -   MCM: Matching centrality model
-
-    -   CM: Connectance model
-
-    -   TMM: Trait matching model
-
-![](images/clipboard-24620577.png)
-
-## Chapter 2: Trait-linkage
-
--   Delineating \<\<interaction guilds\>\> with trait data
--   Useful to predict interactions that are not observed
-
-![](images/clipboard-1951906964.png)
-
-## Chapter 2: Effects of climate change in functional richness vary between palms and mammals, and generate functional trophic asymmetry
-
-::::: columns
-::: {.column width="40%"}
--   Filtering strength varies across interaction guilds\
--   Asymmetry dynamics vary across interaction guilds
--   Interaction guild-specific responses of asymmetry to climate
-    gradient
-:::
-
-::: {.column width="60%"}
-![](images/clipboard-3514177464.png){width="100%"}
-:::
-:::::
-
-## Chapter 2: Effects of climate in FTA correlate with changes in network structure
-
-::::: columns
-::: {.column width="50%"}
--   Positive relationship with H2' - specialization
--   Low specialization overall
-
-![](images/clipboard-98239982.png)
-:::
-
-::: {.column width="50%"}
--   Stronger positive relationship of FTA with Spectral radius \~
-    Nestedness
-
-![](images/clipboard-1692998543.png)
-:::
-:::::
-
-# Chapter 3: Climate change and the deep-time assembly of biodiversity
-
-I twas a long term cooling, but in average it was hoter than today
-
-Europe was warmer and drier, arid grasslands
-
-## Why biodiversity and climate change in deep time
-
-::::: columns
-::: {.column width="45%"}
--   Assembly inference is often limited to contemporary climate
-    gradients
-    -   Climate history structures species pools
--   Historical climate context is underrepresented in contemporary
-    assembly processes
-    -   Variation in rates of change\
-    -   Variation in climatic instability
-:::
-
-::: {.column width="55%"}
-![](images/clipboard-3299944094.png){width="100%"}
-:::
-:::::
-
-## Chapter 3: Conceptual framework
-
--   How do rates and instability of climate change influence taxonomic
-    turnover across deep time?
--   Are responses to climate change consistent across continents and
-    trophic guilds?
-
-![](images/clipboard-3602501179.png)
-
-## Chapter 3: Deep-time climate dynamics across the Neogene
-
-::::: columns
-::: {.column width="45%"}
--   Digitally available paleoatmospheric temperature reconstructions\
-    (Hagen et al., 2019)
-    -   Fossil plant ranges
-    -   Köppen zones
-    -   Orogenesis models
--   GAM-based feature engineering to derive historical change metrics
--   Raster layer time series
-    -   23Ma - 2Ma
-    -   1Ma resolution
-:::
-
-::: {.column width="55%"}
-![](images/clipboard-4234749061.png){width="80%"}
-:::
-:::::
-
-## Chapter 3: Fossil genus turnover across deep time
-
--   Large mammal fossil spatiotemporal data from NOW database
-
-    -   North America
-
-    -   Europe
-
--   100 KM fossil assemblages - 1 Ma
-
--   $\beta_{sim}$ : Simpson component of species dissimilarity
-    (Turnover)
-
-## Chapter 3: Modelling the effects of climate in fossil turnover
-
-::::: columns
-::: {.column width="50%"}
--   Generalized dissimilarity modelling (GDM)
-
--   Richness of fossil assemblages used as model weights
-
--   Explained deviance against a null model (permuting predictors but
-    retaining spatial structure)
-:::
-
-::: {.column width="50%"}
-![](images/clipboard-2705033692.png){width="100%"}
-:::
-:::::
-
-$\log(\beta_{sim}) =
-    \beta_0 +
-    \beta_1 \Delta \text{TempChange} +
-    \beta_2 \Delta \text{TempInst} +
-    \beta_3 \Delta \text{MeanTemp} +
-    \beta_4 \Delta \text{Space} +
-    \beta_5 \Delta \text{Time} +
-    \epsilon$
-
-## Chapter 3: Spatial and temporal drivers of mammal assembly across the Neogene
-
-![](images/clipboard-2765521706.png)
-
-## Chapter 3: Climate drivers of mammal assembly across the Neogene
-
--   Magnitude & direction of climate change the strongest predictor of
-    fossil change
-
--   Global cooling slows down in North America coincides with increased
-    fossil herbivore turnover
-
--   Increased turnover of carnivores in more tropical areas of North
-    America and with climate warming in Europe
-
-![](images/clipboard-204305400.png)
-
-# Synthesis and Implications
+# nthesis and Implications
 
 ## Synthesis:
 
