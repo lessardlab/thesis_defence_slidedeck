@@ -32,7 +32,7 @@ jobs:
       - name: Render Quarto Project
         run: |
           cd slides
-          quarto render rse-skills.qmd
+          quarto render slideck.qmd
           cd ../
 
       - name: Test pages build
